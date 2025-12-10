@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Business Math Hub</title>
+<style>
+body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f9f9f9; }
+header { background:#4CAF50; color:white; padding:20px 0; text-align:center; }
+nav { background:#333; }
+nav ul { list-style:none; display:flex; justify-content:center; margin:0; padding:0; flex-wrap:wrap; }
+nav ul li { margin:0 10px; }
+nav ul li a { color:white; text-decoration:none; padding:14px 10px; display:block; }
+nav ul li a:hover { background:#575757; border-radius:4px; }
+section { padding:50px 20px; max-width:1000px; margin:auto; }
+section h2 { text-align:center; color:#333; }
+.content { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; margin-top:30px; }
+.card { background:white; padding:20px; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.2); width:300px; text-align:center; }
+button { padding:8px 15px; margin-top:10px; background:#4CAF50; color:white; border:none; border-radius:4px; cursor:pointer; }
+button:hover { background:#45a049; }
+.answer { display:none; margin-top:10px; padding:10px; background:#f0f0f0; border-radius:4px; }
+input[type="text"], select { width:80%; padding:5px; margin-top:5px; }
+iframe { width:100%; height:200px; border:none; border-radius:8px; margin-top:10px; }
+footer { background:#333; color:white; text-align:center; padding:20px 0; margin-top:50px; }
+ul { text-align:left; }
+.tab { display:flex; flex-wrap:wrap; justify-content:center; gap:5px; margin-top:10px; }
+.letter { background:#4CAF50; color:white; padding:10px; border-radius:4px; cursor:pointer; margin:2px; user-select:none; }
+.dropzone { display:inline-block; width:30px; height:40px; margin:2px; border-bottom:2px solid #333; text-align:center; vertical-align:middle; font-weight:bold; line-height:40px; cursor:pointer; }
+</style>
+</head>
+<body>
+
+<header>
+<h1>Business Math Hub</h1>
+<p>Learn Salary, Wages, Commission & More – Read, Write, Play, Use!</p>
+</header>
+
+<nav>
+<ul>
+<li><a href="#read">Read</a></li>
+<li><a href="#write">Write</a></li>
+<li><a href="#play">Play</a></li>
+<li><a href="#use">Use</a></li>
+</ul>
+</nav>
+
+<!-- READ SECTION -->
+<section id="read">
+<h2>📖 Read</h2>
+<div class="content">
+
+<div class="card">
+<h3>Understanding Salary, Wages, Commission</h3>
+<p><strong>Salary:</strong> Fixed amount paid regularly (monthly/yearly). Example: ₱20,000/month.</p>
+<p><strong>Wages:</strong> Paid based on hours or days worked. Formula: <em>Wages = Hourly Rate × Hours Worked</em> or <em>Daily Wage × Days Worked</em></p>
+<p><strong>Commission:</strong> Payment based on sales. Formula: <em>Commission = Sales × Commission Rate</em></p>
+<p><strong>Tips:</strong> Always identify if pay is fixed (salary), time-based (wages), or performance-based (commission).</p>
+</div>
+
+<div class="card">
+<h3>External Definitions</h3>
+<p><strong>Salary vs Wages (monthly vs hourly/daily):</strong> 
+<a href="https://www.investopedia.com/articles/personal-finance/031115/salary-vs-hourly-how-benefits-laws-differ.asp" target="_blank">Investopedia – Salary vs. Hourly Pay</a></p>
+<!-- Removed JobStreet, LaborLaw.ph, and ASG Law links -->
+<p><strong>Commission:</strong> Payment based on sales. (<a href="https://www.investopedia.com/terms/c/commission.asp" target="_blank">Investopedia</a>)</p>
+</div>
+
+<div class="card">
+<h3>Formulas</h3>
+<ul>
+<li>Weekly Salary from Daily Wage = Daily Wage × Number of Days Worked in a Week</li>
+<li>Weekly Salary from Annual Salary = Annual Salary ÷ 52</li>
+<li>Monthly Salary from Daily Wage = Daily Wage × Number of Working Days in Month</li>
+<li>Monthly Salary from Annual Salary = Annual Salary ÷ 12</li>
+<li>Gross Income = Salary + Wages + Commission</li>
+<li>Net Pay = Gross Income – Taxes/Deductions</li>
+</ul>
+</div>
+
+
+</div>
+</section>
+
+<!-- WATCH SECTION -->
+<section id="watch">
+<h2>🎥 Watch</h2>
+<div class="content">
+
+<div class="card">
+<h3>Video Tutorial</h3>
+<iframe src="https://www.youtube.com/embed/IlJw0mACR9g?si=USCjKYqUczK62Nlp" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/hee5RYphJYY?si=gdtTs95kwvuMuFuY" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/JDQKCApdZiU?si=VfzKcmE3A1bz97tP" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/U0xJVrpjwQM?si=cul58WxgNJsNe4O8" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/I39FMdW5UVM?si=-m3SJA1ULV3X8nv_" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/3KGa1NKj0gI?si=8m0DfxyH3yiD6Wa3" allowfullscreen></iframe>
+</div>
+
+
+</div>
+</section>
+
+<!-- PLAY SECTION -->
+<section id="play">
+<h2>🎮 Play</h2>
+<div class="content">
+
+<!-- (PLAY SECTION UNCHANGED — FULL CONTENT INCLUDED) -->
+
+<div class="card">
+<h3>Multiple Choice Quiz</h3>
+<p>Select correct formula for Net Pay:</p>
+<select id="quiz1">
+<option value="">--Choose--</option>
+<option value="wrong">Net Pay = Gross Income × Tax Rate</option>
+<option value="correct">Net Pay = Gross Income – Taxes/Deductions</option>
+<option value="wrong2">Net Pay = Daily Wage × 7</option>
+</select>
+<button onclick="checkMCQ('quiz1','feedback8')">Submit</button>
+<div id="feedback8" class="answer"></div>
+</div>
+
+<div class="card">
+<h3>Drag & Match</h3>
+<p>Match example to Salary, Wages, Commission:</p>
+<ul id="dragList" style="text-align:left; list-style:none; padding:0;">
+<li>Maria earns ₱20,000/month fixed</li>
+<li>Juan earns ₱500/day</li>
+<li>Salesperson earns 5% of ₱50,000</li>
+</ul>
+<select id="drop1"><option value="">Select Category</option><option value="Salary">Salary</option><option value="Wages">Wages</option><option value="Commission">Commission</option></select><br>
+<select id="drop2"><option value="">Select Category</option><option value="Salary">Salary</option><option value="Wages">Wages</option><option value="Commission">Commission</option></select><br>
+<select id="drop3"><option value="">Select Category</option><option value="Salary">Salary</option><option value="Wages">Wages</option><option value="Commission">Commission</option></select><br>
+<button onclick="checkDragDrop()">Check Answers</button>
+<div id="feedback9" class="answer"></div>
+</div>
+
+<div class="card">
+<h3>Random Salary Challenge</h3>
+<p>Click the button to generate a random daily wage problem:</p>
+<button onclick="randomProblem()">Generate Problem</button>
+<div id="randomProblem" class="answer"></div>
+<input type="text" id="randomAnswer" placeholder="Type answer">
+<button onclick="checkRandomAnswer()">Check Answer</button>
+<div id="feedback10" class="answer"></div>
+</div>
+
+<div class="card">
+<h3>Scrambled Letters Challenge</h3>
+<p>Click "Generate Problem" to start. Tap letters to place them in the slots below. You can undo letters by clicking them in the slots.</p>
+<button onclick="generateScrambleProblem()">Generate Problem</button>
+<div id="scrambleContainer" class="answer" style="display:block; margin-top:10px"></div>
+<button onclick="checkScrambleAnswer()">Check Answer</button>
+<div id="feedbackScramble" class="answer"></div>
+</div>
+
+<div class="card">
+<h3>Random Multiple Choice Challenge</h3>
+<p>Click "Generate Problem" to start. Select the correct answer from the options.</p>
+<button onclick="generateMCQProblem()">Generate Problem</button>
+<div id="mcqContainer" class="answer" style="display:block; margin-top:10px;"></div>
+<button onclick="checkMCQAnswer()">Check Answer</button>
+<div id="feedbackMCQ" class="answer"></div>
+</div>
+
+</div>
+</section>
+
+<!-- USE SECTION -->
+<section id="use">
+<h2>💻 Use</h2>
+<div class="content">
+
+
+<div class="card">
+<h3>Practical Activity</h3>
+<p>Create a payroll table for 3 employees including salary, wages, commission, and net pay. Use deductions and tax rates.</p>
+<button onclick="toggleAnswer('guide')">Show Guide</button>
+<div id="guide" class="answer">
+1. List employee names<br>
+2. Input salary/daily wage/sales<br>
+3. Apply formulas for gross income<br>
+4. Deduct taxes and other deductions for net pay<br>
+5. Review results
+</div>
+</div>
+
+</div>
+</section>
+
+<footer>
+<p>Created by Ramhil Michelle H. Agapay & Christine Joy A. Ozaraga</p>
+<p>Clarin National High School | Division of Misamis Occidental | 2025</p>
+</footer>
+
+<script>
+/* ALL JAVASCRIPT REMAINS 100% UNCHANGED — FULL CONTENT INCLUDED BELOW */
+
+function toggleAnswer(id) { const element=document.getElementById(id); element.style.display=(element.style.display==="" || element.style.display==="none")?"block":"none"; }
+
+let writeAttempts = {};
+function checkAnswer(inputId, correctAnswer, feedbackId){
+  if(!writeAttempts[inputId]) writeAttempts[inputId]=0;
+  const userAnswer=document.getElementById(inputId).value.trim();
+  const feedback=document.getElementById(feedbackId);
+  feedback.style.display="block";
+  if(userAnswer===""){ feedback.style.backgroundColor="#ffcccc"; feedback.textContent="Please enter an answer!"; return; }
+  writeAttempts[inputId]++;
+  if(Number(userAnswer)===correctAnswer){ feedback.style.backgroundColor="#ccffcc"; feedback.textContent="✅ Correct!"; writeAttempts[inputId]=0; }
+  else{
+    if(writeAttempts[inputId]<3){ feedback.style.backgroundColor="#ffcccc"; feedback.textContent=`❌ Incorrect. Try again! (${writeAttempts[inputId]}/3)`; }
+    else{ feedback.style.backgroundColor="#ffcccc"; feedback.textContent=`❌ Incorrect. Correct answer: ${correctAnswer}`; writeAttempts[inputId]=0; }
+  }
+}
+
+function checkDragDrop(){
+  const drop1=document.getElementById("drop1").value;
+  const drop2=document.getElementById("drop2").value;
+  const drop3=document.getElementById("drop3").value;
+  const feedback=document.getElementById("feedback9");
+  if(drop1==="Salary" && drop2==="Wages" && drop3==="Commission"){ feedback.style.display="block"; feedback.style.backgroundColor="#ccffcc"; feedback.textContent="✅ All Correct!"; }
+  else{ feedback.style.display="block"; feedback.style.backgroundColor="#ffcccc"; feedback.textContent="❌ Some are incorrect. Try again!"; }
+}
+
+let currentAnswer=0; let salaryAttempts=0;
+function randomProblem(){
+  const dailyWage=Math.floor(Math.random()*1000)+100;
+  const days=Math.floor(Math.random()*7)+1;
+  currentAnswer=dailyWage*days;
+  salaryAttempts=0;
+  document.getElementById("randomProblem").style.display="block";
+  document.getElementById("randomProblem").textContent=`Daily wage: ₱${dailyWage}. Number of days worked: ${days}. Compute weekly salary.`;
+  document.getElementById("feedback10").style.display="none";
+  document.getElementById("randomAnswer").value="";
+}
+function checkRandomAnswer(){
+  const userAnswer=Number(document.getElementById("randomAnswer").value);
+  const feedback=document.getElementById("feedback10");
+  feedback.style.display="block";
+  salaryAttempts++;
+  if(userAnswer===currentAnswer){ feedback.style.backgroundColor="#ccffcc"; feedback.textContent="✅ Correct!"; salaryAttempts=0; }
+  else{
+    if(salaryAttempts<3){ feedback.style.backgroundColor="#ffcccc"; feedback.textContent=`❌ Incorrect. Try again! (${salaryAttempts}/3)`; }
+    else{ feedback.style.backgroundColor="#ffcccc"; feedback.textContent=`❌ Incorrect. Correct answer: ${currentAnswer}`; salaryAttempts=0; }
+  }
+}
+
+function checkMCQ(selectId, feedbackId){
+  const select=document.getElementById(selectId);
+  const feedback=document.getElementById(feedbackId);
+  if(select.value==="correct"){ feedback.style.display="block"; feedback.style.backgroundColor="#ccffcc"; feedback.textContent="✅ Correct!"; }
+  else{ feedback.style.display="block"; feedback.style.backgroundColor="#ffcccc"; feedback.textContent="❌ Incorrect. Try again!"; }
+}
+
+/* SCRAMBLE + MCQ SCRIPT CONTINUES — UNCHANGED */
+
+const scrambleWordsList = [
+  { word: "SALARY", hint: "Fixed regular payment, usually monthly or annually" },
+  { word: "WAGES", hint: "Payment based on hours worked or units produced" },
+  { word: "COMMISSION", hint: "Payment based on sales achieved" },
+  { word: "GROSS", hint: "Total income before deductions" },
+  { word: "NET", hint: "Income after deductions" }
+];
+let currentWord = null;
+let availableLetters = [];
+let scrambleAttempts = 0;
+
+function shuffleArray(array){ return array.sort(()=>Math.random()-0.5); }
+
+function generateScrambleProblem(){
+  scrambleAttempts=0;
+  const problem=scrambleWordsList[Math.floor(Math.random()*scrambleWordsList.length)];
+  currentWord = problem.word;
+  const container = document.getElementById("scrambleContainer");
+  container.innerHTML = "";
+  const hintP = document.createElement("p"); hintP.innerHTML=`<strong>Hint:</strong> ${problem.hint}`; container.appendChild(hintP);
+
+  const answerDiv = document.createElement("div");
+  answerDiv.id = "answerTab"; answerDiv.className = "tab";
+  container.appendChild(answerDiv);
+  for(let i=0;i<currentWord.length;i++){
+    const slot=document.createElement("div");
+    slot.className="dropzone";
+    slot.dataset.index=i;
+    slot.addEventListener("click",()=>undoLetter(i));
+    answerDiv.appendChild(slot);
+  }
+  renderLetterButtons();
+}
+
+function renderLetterButtons(){
+  const container=document.getElementById("scrambleContainer");
+  const oldLetters=container.querySelectorAll(".letter"); oldLetters.forEach(l=>l.remove());
+  availableLetters = shuffleArray(currentWord.split(""));
+  availableLetters.forEach((l, idx)=>{
+    const btn=document.createElement("div"); btn.className="letter"; btn.textContent=l;
+    btn.addEventListener("click",()=>placeLetter(l, idx));
+    container.appendChild(btn);
+  });
+}
+
+function placeLetter(letter, idx){
+  const slots=document.querySelectorAll("#answerTab .dropzone");
+  for(let slot of slots){
+    if(!slot.textContent){
+      slot.textContent=letter;
+      availableLetters[idx]=null;
+      document.querySelectorAll(".letter")[idx].style.visibility="hidden";
+      break;
+    }
+  }
+}
+
+function undoLetter(slotIndex){
+  const slots=document.querySelectorAll("#answerTab .dropzone");
+  const letter = slots[slotIndex].textContent;
+  if(!letter) return;
+  slots[slotIndex].textContent="";
+  for(let i=0;i<availableLetters.length;i++){
+    if(availableLetters[i]===null){
+      const btns=document.querySelectorAll(".letter"); btns[i].style.visibility="visible"; availableLetters[i]=letter; break;
+    }
+  }
+}
+
+function checkScrambleAnswer(){
+  const answerDiv=document.getElementById("answerTab"); let userAns="";
+  for(let slot of answerDiv.children) userAns+=slot.textContent;
+  const feedback=document.getElementById("feedbackScramble"); feedback.style.display="block";
+  scrambleAttempts++;
+  if(userAns===currentWord){ feedback.style.backgroundColor="#ccffcc"; feedback.textContent="✅ Correct!"; scrambleAttempts=0; }
+  else{
+    if(scrambleAttempts<3){ feedback.style.backgroundColor="#ffcccc"; feedback.textContent=`❌ Incorrect. Try again! (${scrambleAttempts}/3)`; }
+    else{ feedback.style.backgroundColor="#ffcccc"; feedback.textContent=`❌ Incorrect. Correct answer: ${currentWord}`; scrambleAttempts=0; renderLetterButtons(); for(let slot of answerDiv.children) slot.textContent=""; }
+  }
+}
+
+const mcqProblems=[
+  {question:"Net Pay formula?", options:["Gross Income × Tax Rate","Gross Income – Taxes/Deductions","Daily Wage × 7"], answer:1},
+  {question:"Weekly Salary from Daily Wage?", options:["Daily × 7","Monthly ÷ 4","Annual ÷ 12"], answer:0},
+  {question:"Commission is?", options:["Fixed pay","Time-based pay","Based on sales"], answer:2},
+  {question:"Gross income?", options:["Net – Deductions","Salary + Wages + Commission","Daily × 30"], answer:1},
+  {question:"Net income after deductions?", options:["Net","Gross","Salary"], answer:0}
+];
+let currentMCQ=null;
+function generateMCQProblem(){
+  currentMCQ=mcqProblems[Math.floor(Math.random()*mcqProblems.length)];
+  const container=document.getElementById("mcqContainer"); container.innerHTML=currentMCQ.question+"<br>";
+  currentMCQ.options.forEach((opt,i)=>{ container.innerHTML+=`<input type="radio" name="mcqRad" value="${i}">${opt}<br>`; });
+  document.getElementById("feedbackMCQ").style.display="none";
+}
+function checkMCQAnswer(){
+  const feedback=document.getElementById("feedbackMCQ");
+  const selected=document.querySelector('input[name="mcqRad"]:checked');
+  feedback.style.display="block";
+  if(!selected){ feedback.style.backgroundColor="#ffcccc"; feedback.textContent="Please select an answer!"; return; }
+  if(Number(selected.value)===currentMCQ.answer){ feedback.style.backgroundColor="#ccffcc"; feedback.textContent="✅ Correct!"; }
+  else{ feedback.style.backgroundColor="#ffcccc"; feedback.textContent="❌ Incorrect! Try again."; }
+}
+</script>
+
+</body>
+</html>
